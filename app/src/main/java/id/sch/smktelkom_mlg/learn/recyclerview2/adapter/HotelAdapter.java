@@ -40,7 +40,6 @@ public class  HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
     {
         Hotel hotel = hotelList.get(position);
         holder.tvJudul.setText(hotel.judul);
-        holder.tvDeskripsi.setText(hotel.deskripsi);
         holder.ivFoto.setImageDrawable(hotel.foto);
 
     }
@@ -57,7 +56,6 @@ public class  HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
 
         ImageView ivFoto;
         TextView tvJudul;
-        TextView tvDeskripsi;
 
 
         public ViewHolder(View itemView)
@@ -65,7 +63,7 @@ public class  HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
-            tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
+
         }
     }
 }
